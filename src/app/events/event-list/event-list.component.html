@@ -1,0 +1,8 @@
+<div>
+  <h1>Upcoming Angular Events</h1>
+  <hr>
+  <!-- <app-events-thumbnail (eventClick)="handleEventClicked($event)" [event]="event1"></app-events-thumbnail> -->
+  <h3>{{ thumbnail.event.name }}</h3>
+  <app-event-thumbnail #thumbnail [event]="event1"></app-event-thumbnail>
+  <button class="btn btn-primary" (click)="thumbnail.logJunk()">Junk Button</button>
+</div>
