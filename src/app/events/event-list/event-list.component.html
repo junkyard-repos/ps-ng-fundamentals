@@ -2,7 +2,12 @@
   <h1>Upcoming Angular Events</h1>
   <hr>
   <!-- <app-events-thumbnail (eventClick)="handleEventClicked($event)" [event]="event1"></app-events-thumbnail> -->
-  <h3>{{ thumbnail.event.name }}</h3>
-  <app-event-thumbnail #thumbnail [event]="event1"></app-event-thumbnail>
+  <div class="row">
+    <div class="col-md-5" *ngFor="let event of events">
+      <h3>{{ thumbnail.event.name }}</h3>
+      <app-event-thumbnail #thumbnail [event]="event"></app-event-thumbnail>
+    </div>
+  </div>
+
   <button class="btn btn-primary" (click)="thumbnail.logJunk()">Junk Button</button>
 </div>

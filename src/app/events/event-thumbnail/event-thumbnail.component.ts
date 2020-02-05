@@ -17,9 +17,24 @@ export class EventThumbnailComponent implements OnInit {
   ngOnInit() {
   }
 
+  getStartTimeClass() {
+    if (this.event && this.event.time === '8:00 am') {
+      return ['green', 'bold'];
+    }
+  }
+
+  getStartTimeStyle(): any {
+    if (this.event && this.event.time === '8:00 am') {
+      return { color: '#00cc00', 'font-weight': 'bold' };
+    }
+  }
 
   logJunk() {
     console.log('Junk');
+  }
+
+  log(t) {
+    console.log(t);
   }
 
   // handleClickMe() {

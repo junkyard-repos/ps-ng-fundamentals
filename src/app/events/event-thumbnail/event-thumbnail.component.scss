@@ -5,3 +5,15 @@
 .well {
   div {color: rgb(175, 175, 175);}
 }
+
+.thumbnail {
+  min-height: 210px;
+}
+
+.well div.green {
+  color: #00cc00;
+}
+
+.well div.bold {
+  font-weight: bold;
+}
